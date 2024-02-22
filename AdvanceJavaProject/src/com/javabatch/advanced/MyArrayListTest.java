@@ -13,6 +13,7 @@ public class MyArrayListTest {
 		mylist.add(60);
 		System.out.println("total element: " +mylist.size());
 		System.out.println("printing the elements");
+		System.out.println("hi");
 		mylist.iterate();
 		
 	}
