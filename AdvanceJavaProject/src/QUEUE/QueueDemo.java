@@ -13,6 +13,7 @@ public class QueueDemo {
 		queue.add(new CandidateDetails("Mahima", 3));
 		while (queue.size()>0) {
 			System.out.println(queue.poll());
+			System.out.println("Hi");
 		}
 
 	}
