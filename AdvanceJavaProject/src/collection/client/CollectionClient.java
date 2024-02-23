@@ -47,7 +47,7 @@ public class CollectionClient {
 		System.out.println("=========EOP=============");
 		
 		System.out.println("Get Engineering Employee List ::");
-		List<Employee> getEngineeringEmp = empManage.getDept();
+		List<Employee> getEngineeringEmp = empManage.getDept("Admin");
 		printList(getEngineeringEmp);
 		System.out.println("=========EOP=============");
 		

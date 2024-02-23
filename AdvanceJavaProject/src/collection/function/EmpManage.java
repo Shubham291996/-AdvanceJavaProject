@@ -91,12 +91,17 @@ public class EmpManage {
 		Collections.sort(allEmp, Comparator.comparingLong(Employee::getSalary).reversed());
 		return allEmp;
 	}
-	public List getDept() {
-
+	public List getDept(String dept) {
+		List<Employee> deptList = new ArrayList<>();
 		List<Employee> allEmp = getEmpList();
-		Collections.sort(allEmp);
+		for (int i = 0; i < allEmp.size(); i++) {
+			Employee emp = allEmp.get(i);
+			if (dept.equals(emp.getDept())) {
+				deptList.add(emp);
+			}
+		}
 
-		return allEmp;
+		return deptList;
 	}
 }
 
